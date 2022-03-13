@@ -3,7 +3,7 @@ body{
 }
 
 .page{
-    animation: appear 3s ease;
+    animation: appear 2s ease;
 }
 
 @keyframes appear {
@@ -139,6 +139,7 @@ a{
     align-items:flex-end;
 }
 .profile-value{
+    border-radius: 10px;
     margin-top: 140px;
     width: 70%;
     height: 50%;
@@ -164,4 +165,96 @@ p{
     background-image: url(https://cdn.wallpapersafari.com/39/22/sCmWo7.jpg);
     background-repeat: no-repeat;
     background-size: 1000px 500px;
+}
+
+.dothi{
+    width: 100%;
+    height: 55vh;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.normal{
+    width: 6vw;
+    height: var(--percent);
+    background-color: red;
+    text-align: center;
+    animation: growth ease-in 0.75s;
+}
+
+@keyframes growth {
+    from{
+        height: calc(var(--percent)-50%);
+        opacity: 0;
+    }
+    to{
+        height: var(--percent);
+        opacity: 1;
+    }
+}
+
+.photo-page{
+    width: 100vw;
+    height: 100vh;
+    box-shadow: none;
+    background-image: url(https://img.thuthuattinhoc.vn/uploads/2019/07/28/hinh-nen-gon-may-hoang-hon_014746754.png);
+    background-size: 100%;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.photo1{
+    padding-top: 100px ;
+    width: 45%;
+    border-radius: 5px;
+}
+
+.photo1a{
+    width: 100%;
+    height: 45%;
+    margin-bottom: 25px;
+}
+
+.photo1b{
+    width: 100%;
+    height: 45%;
+
+}
+
+.photo2{
+    padding-top: 100px;
+    width: 45%;
+    border-radius: 5px;
+}
+
+
+.photo2a{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.photo2a1{
+    width: 50%;
+}
+
+.photo2a1{
+    width: 50%;
+}
+
+.photo2b{
+    margin-top: 25px;
+    width: 100%;
+    height: 60%;
+}
+
+
+img{
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
 }
